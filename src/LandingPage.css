@@ -1,0 +1,109 @@
+.content{
+    justify-content: center;
+    display: block;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.content > h1{
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content > h1 > span{
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    color: #a20a0a;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content > p {
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #1c2b2d;
+}
+
+.btnLand{
+    background-color: #a20a0a;
+    color: white;
+    padding: 1px 15px;
+    width: 130px;
+    height: 40px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+.btnLand:hover{
+    color: #a20a0a !important;
+    background-color: #1c2b2d !important;
+    border: #a20a0a !important;
+    outline: #a20a0a !important;
+    margin-left: 15px !important;
+}
+.imgBox{
+    z-index: 11111;
+}
+.imgBox img{
+    position: absolute;
+    z-index: 111111;
+}
+
+.imgBox::before{
+    content: 'NIKE';
+    font-size: 240px;
+    position: absolute;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    color: #ccc;
+    transform: rotate(40deg);
+    /* margin-top: 100px; */
+    opacity: 0.1;
+    letter-spacing: 12px;
+    
+}
+
+@media(max-width:768px){
+    .circle{
+        clip-path: circle(36.4% at 95% 26%);
+
+    }
+    .navbar-brand{
+        color: #ffff !important;
+    }
+    .content > h1{
+        font-size: 2.1rem;
+        padding: 0 !important;
+    }
+    .content > p{
+        font-size: 14px;
+    }
+    
+  .navbar-toggler{
+    background-color: brown !important;
+    font-size: 14px !important; 
+  }
+  .navbar-toggler:focus{
+    outline: none !important;
+
+  }
+  .collapse{
+      background-color: #1c2b2d !important;
+      color: tomato !important;
+      position: relative !important;
+      z-index: 1111111111 !important;
+      text-align: center !important;
+      transition: 0.4s all ease !important;
+      
+  }
+
+    .imgBox::before{
+        display: none;
+    }
+    .imgBox img{
+        position: relative;
+        z-index: 0;
+    }
+}

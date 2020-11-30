@@ -1,0 +1,24 @@
+.App{
+  
+overflow: hidden;
+}
+
+
+.circle{
+    background-color: #222831;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(55.6% at 100% 32%);
+}
+
+.navbar-nav > .nav-item{
+    color: white !important;
+    margin: 0 5px;
+}
+.navbar-nav{
+    padding-right: 50px;
+}
+ 
